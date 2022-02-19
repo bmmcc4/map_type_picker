@@ -40,10 +40,10 @@ class MapTypePicker extends StatefulWidget {
   }
 
   @override
-  _MapTypePickerState createState() => _MapTypePickerState();
+  MapTypePickerState createState() => MapTypePickerState();
 }
 
-class _MapTypePickerState extends State<MapTypePicker> {
+class MapTypePickerState extends State<MapTypePicker> {
   var mapTypes = {'Standard': false, 'Satellite': false, 'Hybrid': false};
 
   @override
@@ -55,6 +55,7 @@ class _MapTypePickerState extends State<MapTypePicker> {
   @override
   Widget build(BuildContext context) {
     return Container(
+        key: const Key('MapTypePickerButton'),
         margin: EdgeInsets.all(widget.edgeInsetsAll ?? 0),
         padding:
             EdgeInsets.symmetric(horizontal: widget.horizontalPadding ?? 5),

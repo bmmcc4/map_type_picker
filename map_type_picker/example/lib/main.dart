@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:map_type_picker/map_type_picker.dart';
-import 'package:platform_maps_flutter/platform_maps_flutter.dart';
 import 'package:example/screens/homepagescreen.dart';
 
 void main() {
