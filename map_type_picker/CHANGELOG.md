@@ -1,3 +1,7 @@
+## 1.0.2 - 2022-02-18
+
+* Fixed bug with changing button text color.
+
 ## 1.0.1 - 2022-02-18
 
 * Refactored example app.

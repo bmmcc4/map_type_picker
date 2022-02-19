@@ -40,10 +40,10 @@ class MapTypePicker extends StatefulWidget {
   }
 
   @override
-  MapTypePickerState createState() => MapTypePickerState();
+  _MapTypePickerState createState() => _MapTypePickerState();
 }
 
-class MapTypePickerState extends State<MapTypePicker> {
+class _MapTypePickerState extends State<MapTypePicker> {
   var mapTypes = {'Standard': false, 'Satellite': false, 'Hybrid': false};
 
   @override
@@ -77,11 +77,11 @@ class MapTypePickerState extends State<MapTypePicker> {
                   },
                   style: mapTypeEntry.value == true
                       ? TextButton.styleFrom(
-                          primary: widget.buttonSelectedColor ?? Colors.black,
+                          primary: widget.buttonTextColor ?? Colors.black,
                           backgroundColor:
                               widget.buttonSelectedColor ?? Colors.white)
                       : TextButton.styleFrom(
-                          primary: widget.buttonSelectedColor ?? Colors.black))
+                          primary: widget.buttonTextColor ?? Colors.black))
           ],
         ),
         decoration: BoxDecoration(
