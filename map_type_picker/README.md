@@ -11,29 +11,46 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Dart package that creates a custom picker to easily change between map types when using Platform Maps in your app.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Use a Stack widget to overlay the map type picker ontop of a Platform Map, then easily switch between different map types. Map type picker colors are completly customizable.
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+The platform_maps_flutter package must be imported into your project before using the map_type_picker package
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
+1. Set starting map type in your Widget initState
 ```dart
-const like = 'sample';
+@override
+  void initState() {
+    MapTypePicker.mapType = MapType.normal; // Here, options are .normal, .hybrid, .satellite
+    super.initState();
+  }
+```
+2. Set Platform Map mapType to variable set in initState
+```dart
+PlatformMap(
+            mapType: MapTypePicker.mapType, // Here
+            initialCameraPosition: const CameraPosition(
+              target: LatLng(51.507391, -0.1277),
+              zoom: 10.0,
+            ))
+```
+3. In the same class as the Map Type Picker, create a refresh function to update parent Platform Map state from child MapTypePicker
+```dart
+refresh() {
+    setState(() {});
+  }
+```
+4. Overlay Platform Map with Map Type Picker widget, pass the refresh function in the notifyParent argument
+```dart
+MapTypePicker(notifyParent: refresh)
 ```
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+See example for full sample app implementing the Map Type Picker widget.

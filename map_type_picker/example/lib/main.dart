@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Sample Map Type Picker")),
+      appBar: AppBar(title: const Text("Sample Map Type Picker"), elevation: 0),
       body: Stack(children: [
         PlatformMap(
             mapType: MapTypePicker.mapType, // Enter Map Type Here

@@ -1,3 +1,7 @@
+## 1.0.3 - 2022-02-19
+
+* Updated documentation, minor bug fixes.
+
 ## 1.0.2 - 2022-02-18
 
 * Fixed bug with changing button text color.
