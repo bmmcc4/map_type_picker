@@ -1,6 +1,6 @@
 name: map_type_picker
 description: To easily change between map types when using Platform Maps.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/bmmcc4/map_type_picker.git
 
 environment:
