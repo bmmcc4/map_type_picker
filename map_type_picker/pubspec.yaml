@@ -1,7 +1,7 @@
 name: map_type_picker
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: To easily change between map types when using Platform Maps.
+version: 1.0.0
+homepage: https://github.com/bmmcc4/map_type_picker.git
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  platform_maps_flutter: ^1.0.2
 
 dev_dependencies:
   flutter_test:
