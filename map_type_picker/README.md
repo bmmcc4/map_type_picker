@@ -16,6 +16,7 @@ Dart package that creates a custom picker to easily change between map types whe
 ## Features
 
 Use a Stack widget to overlay the map type picker ontop of a Platform Map, then easily switch between different map types. Map type picker colors are completly customizable.
+![map-switching-type-with-picker](https://github.com/bmmcc4/map_type_picker/blob/main/map_type_picker/lib/example%20videos/ezgif.com-gif-maker.gif)
 
 ## Getting started
 
